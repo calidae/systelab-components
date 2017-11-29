@@ -11,7 +11,7 @@
 }
 
 .form-icon > [class*='icon-'] {
-    // position: absolute;
+    position: absolute;
     top: 50%;
     width: 30px;
     margin-top: -8px;
@@ -21,11 +21,7 @@
     pointer-events: none;
 }
 
-.form-icon-flip > [class*='icon-'] {
-    right: 0;
-}
-
-.uk-icon,
+.icon,
 [class*='icon-'] {
     @include font-smoothing(antialiased, grayscale);
 
@@ -53,14 +49,14 @@
     }
 }
 
-.uk-icon {
+.icon {
     font-family: FontAwesome;
 }
 
 [class*='icon-'],
-.uk-icon,
-.uk-icon:hover,
-.uk-icon:focus {
+.icon,
+.icon:hover,
+.icon:focus {
     text-decoration: none;
 }
 
