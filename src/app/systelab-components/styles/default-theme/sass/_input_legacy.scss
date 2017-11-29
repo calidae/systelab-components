@@ -37,8 +37,7 @@
     background-color: white;
     cursor: not-allowed;
 
-    + [class*='icon-'],
-    + [class*='uk-icon-'] {
+    + [class*='icon-'] {
       opacity: 0.5;
     }
   }
