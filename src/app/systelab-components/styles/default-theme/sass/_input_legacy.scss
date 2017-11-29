@@ -51,7 +51,7 @@
 /**
  * We need to define the parent's input width when there's an icon and they need to work together
  */
-.uk-form-icon {
+.form-icon {
   &:not([class*="uk-width-"]) {
     width: $input-width;
   }

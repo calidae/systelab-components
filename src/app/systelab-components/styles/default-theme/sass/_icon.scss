@@ -4,6 +4,12 @@
  * 1. Needed to prevent inherit font style
  */
 
+.form-icon {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+}
+
 .form-icon > [class*='icon-'] {
     // position: absolute;
     top: 50%;
