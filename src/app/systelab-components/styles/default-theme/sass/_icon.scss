@@ -1,15 +1,15 @@
-.icon-medium {
+.slab-icon-medium {
     font-size: 200%;
     vertical-align: -16%;
 }
 
-.form-icon {
+.slab-form-icon {
     display: inline-block;
     position: relative;
     max-width: 100%;
 }
 
-.form-icon > [class*='icon-'] {
+.slab-form-icon > [class*='icon-'] {
     position: absolute;
     top: 50%;
     width: 30px;
@@ -20,7 +20,7 @@
     pointer-events: none;
 }
 
-.icon,
+.slab-icon,
 [class*='icon-'] {
     @include font-smoothing(antialiased, grayscale);
 
@@ -48,14 +48,14 @@
     }
 }
 
-.icon {
+.slab-icon {
     font-family: FontAwesome;
 }
 
 [class*='icon-'],
-.icon,
-.icon:hover,
-.icon:focus {
+.slab-icon,
+.slab-icon:hover,
+.slab-icon:focus {
     text-decoration: none;
 }
 
