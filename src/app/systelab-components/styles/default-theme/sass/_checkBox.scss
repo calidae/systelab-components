@@ -52,18 +52,18 @@ input[type="checkbox"]:not(.not-show) + label {
 }
 
 // Define background color and icon when checked
-input[type="checkbox"]:not(.not-show):checked + label:before {
+input[type="checkbox"]:not(.slab-checkbox-not-show):checked + label:before {
   content: '\F00d';
   background-color: $checkbox-border-color;
 }
 
-input[type="checkbox"]:not(.not-show):disabled + label {
+input[type="checkbox"]:not(.slab-checkbox-not-show):disabled + label {
   opacity: 0.5;
   cursor: default;
 }
 
 @mixin selection-checkbox() {
-  .checkbox-unchecked {
+  .slab-checkbox-unchecked {
     width: $checkbox-height;
     height: $checkbox-height;
     position: absolute;
@@ -85,7 +85,7 @@ input[type="checkbox"]:not(.not-show):disabled + label {
     margin-top: -1px !important;
   }
 
-  .checkbox {
+  .slab-checkbox {
     width: $checkbox-height;
     height: $checkbox-height;
     position: absolute;
@@ -107,7 +107,7 @@ input[type="checkbox"]:not(.not-show):disabled + label {
     margin-top: -1px !important;
   }
 
-  .checkbox::before {
+  .slab-checkbox::before {
     font-family: "FontAwesome" !important;
     content: '\F00d';
     background-color: #158fef;
