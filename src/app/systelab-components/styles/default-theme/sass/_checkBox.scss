@@ -46,9 +46,9 @@ input[type="checkbox"]:not(.slab-checkbox-not-show) + label {
     line-height: 1em;
     color: $checkbox-color;
 
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
-    font-family: FontAwesome;
+    font-family: icomoon;
     font-size: $checkbox-height - 3px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
