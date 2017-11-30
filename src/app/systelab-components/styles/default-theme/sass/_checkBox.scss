@@ -9,7 +9,7 @@ input[type="checkbox"]:not(:checked), input[type="checkbox"]:checked {
 }
 
 // Styles for label after checkbox
-input[type="checkbox"]:not(.not-show) + label {
+input[type="checkbox"]:not(.slab-checkbox-not-show) + label {
   $top-icon: ($form-elements-height - $checkbox-height) / 2;
 
   @include user-selection(none);
