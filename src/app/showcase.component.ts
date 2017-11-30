@@ -193,7 +193,7 @@ export class ShowcaseComponent implements OnInit {
 		
 		const progressbarDialogParameters: ProgressbarDialogParameters = ProgressbarDialog.getParameters();
 
-		progressbarDialogParameters.dialogClass = 'w-66 h-66';
+		progressbarDialogParameters.dialogClass = 'w-33 h-25';
 
 		this.dialogService.showDialog(ProgressbarDialog, progressbarDialogParameters);
 	}
