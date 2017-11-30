@@ -11,7 +11,7 @@ $background-line: round($slider-height / 3);
 .ui-slider {
   height: $background-line;
 
-  &:not([class*="uk-width-"]) {
+  &:not([class*="w-"]) {
     width: $input-width;
   }
   margin-top: ($slider-height - $background-line) / 2;
