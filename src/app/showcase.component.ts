@@ -184,7 +184,7 @@ export class ShowcaseComponent implements OnInit {
 		const fullFlexDialogParameters: FullFlexDialogParameters = FullFlexDialog.getParameters();
 
 		fullFlexDialogParameters.index = 4;
-		fullFlexDialogParameters.dialogClass = 'uk-width-2-3 uk-height-2-3';
+		fullFlexDialogParameters.dialogClass = 'w-66 h-66';
 
 		this.dialogService.showDialog(FullFlexDialog, fullFlexDialogParameters);
 	}
@@ -193,7 +193,7 @@ export class ShowcaseComponent implements OnInit {
 		
 		const progressbarDialogParameters: ProgressbarDialogParameters = ProgressbarDialog.getParameters();
 
-		progressbarDialogParameters.dialogClass = 'uk-width-2-3 uk-height-2-3';
+		progressbarDialogParameters.dialogClass = 'w-66 h-66';
 
 		this.dialogService.showDialog(ProgressbarDialog, progressbarDialogParameters);
 	}
