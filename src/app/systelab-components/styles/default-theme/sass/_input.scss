@@ -1,0 +1,39 @@
+/**
+ * 1. Override Bootstrap default behavior
+ */
+ input:not([type]),
+ input[type="text"],
+ input[type="password"],
+ input[type="datetime"],
+ input[type="datetime-local"],
+ input[type="date"],
+ input[type="month"],
+ input[type="time"],
+ input[type="week"],
+ input[type="number"],
+ input[type="email"],
+ input[type="url"],
+ input[type="search"],
+ input[type="tel"],
+ input[type="file"],
+ input[type="color"] {
+     &.form-control{
+         height: $input-height;
+         border-color: $medium-gray;
+         border-radius: $border-radius;
+         font-family: $base-body-font-family;
+         padding: ($input-height - $base-font-size - 2px)/2 6px;
+     }
+     &:disabled {
+         color: $form-border;
+         border-color: $form-border;
+         background-color: white;
+         cursor: not-allowed;
+         @include placeholder-color($form-border);
+     }
+ }
+ .disabled {
+     label {
+         color: $disabled;
+     }
+ }
