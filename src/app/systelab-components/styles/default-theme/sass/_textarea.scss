@@ -1,30 +1,30 @@
-/* $textarea-width: defines the width of the textarea inside the uk-form when the uk-width class is not present.*/
-$textarea-width: $input-width !default;
-/* $textarea-min-height: defines the min-height of the textarea inside the uk-form.*/
-$textarea-min-height: ceil(170px * $size_percentage) !default;
+/* $slab-textarea-width: defines the width of the textarea inside the uk-form when the uk-width class is not present.*/
+$slab-textarea-width: $input-width !default;
+/* $slab-textarea-min-height: defines the min-height of the textarea inside the uk-form.*/
+$slab-textarea-min-height: ceil(170px * $size_percentage) !default;
 
 
 .slab-textarea {
   border-radius: $border-radius;
-  min-height: $textarea-min-height;
+  min-height: $slab-textarea-min-height;
 
-  &:not([class*="uk-width-"]) {
-    width: $textarea-width;
+  &:not([class*="w-"]) {
+    width: $slab-textarea-width;
   }
 
-  &.no-resize {
+  &.slab-textarea-no-resize {
     resize: none;
   }
 
-  &.vertical-resize {
+  &.slab-textarea-vertical-resize {
     resize: vertical;
   }
 
-  &.horizontal-resize {
+  &.slab-textarea-horizontal-resize {
     resize: horizontal;
   }
 
-  + .options-overlay {
+  + .slab-textarea-options-overlay {
     top: 7px;
     right: 7px;
     font-size: 1.5em;
