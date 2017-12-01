@@ -3,7 +3,8 @@ $textarea-width: $input-width !default;
 /* $textarea-min-height: defines the min-height of the textarea inside the uk-form.*/
 $textarea-min-height: ceil(170px * $size_percentage) !default;
 
-.uk-form textarea {
+
+.slab-textarea {
   border-radius: $border-radius;
   min-height: $textarea-min-height;
 
