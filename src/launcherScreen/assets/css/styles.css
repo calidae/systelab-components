@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?p7zj49');
+  src:  url('../fonts/icomoon.eot?p7zj49#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?p7zj49') format('truetype'),
+    url('../fonts/icomoon.woff?p7zj49') format('woff'),
+    url('../fonts/icomoon.svg?p7zj49#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: white;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-configuration:before {
+  content: "\e907";
+}
+.icon-appstore:before {
+  content: "\e900";
+}
+.icon-gplay:before {
+  content: "\e901";
+}
+.icon-laboratory:before {
+  content: "\e902";
+}
+.icon-modulab:before {
+  content: "\e903";
+}
+.icon-plus:before {
+  content: "\e904";
+}
+.icon-tubes:before {
+  content: "\e905";
+}
+.icon-werfen:before {
+  content: "\e906";
+}
+
+body {
+  background: url('../img/launcher-bg.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slab-launcher {
+  background: linear-gradient(0deg, rgba(0, 130, 240, 0.9) 0%, rgba(149, 222, 220, 0.9) 100%);
+}
+
+.slab-launcher__header {
+  height: 200px;
+}
+
+.slab-languages__item {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.slab-languages__item,
+.slab-languages__item:hover {
+  border-top: solid 5px transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.slab-languages__item:hover {
+  opacity: 1;
+}
+
+.slab-languages__item--active {
+  border-top: solid 5px white !important;
+  opacity: 1;
+}
+
+.slab-launcher__title {
+  font-size: 3.5rem;
+}
+
+.slab-launcher__description {
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+}
+
+.slab-launcher__footer {
+  height: 75px;
+}
+
+.slab-icon-wrapper {
+  border: solid 2px white;
+}
+
+.slab-icon-square {
+  width: 100px;
+  height: 100px;
+}
+
+.slab-icon-rounded {
+  border-radius: 34px;
+}
+
+.slab-icon__small {
+  font-size: 22px;
+}
+
+.slab-icon__medium {
+  font-size: 55px;
+}
+
+.slab-icon__large {
+  font-size: 80px;
+}
+
+.slab-menu-link {
+  color: white;
+}
+
+.slab-menu-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.slab-menu-link:hover .slab-icon-wrapper {
+  background: white;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.19);
+}
+
+.slab-menu-link:hover .slab-icon__medium:before {
+  color: #0082F0;
+}
