@@ -62,7 +62,7 @@ body {
 }
 
 .slab-launcher__header {
-  height: 200px;
+  height: 120px;
 }
 
 .slab-languages__item {
@@ -87,57 +87,61 @@ body {
 }
 
 .slab-launcher__title {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 .slab-launcher__description {
-  font-size: 1.3rem;
-  line-height: 2.6rem;
-}
-
-.slab-launcher__footer {
-  height: 75px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
 }
 
 .slab-icon-wrapper {
   border: solid 2px white;
 }
 
-.slab-icon-square {
+.slab-icon--squared {
   width: 100px;
   height: 100px;
 }
 
-.slab-icon-rounded {
+.slab-icon--rounded {
   border-radius: 34px;
 }
 
-.slab-icon__small {
+.slab-icon--small {
   font-size: 22px;
 }
 
-.slab-icon__medium {
+.slab-icon--medium {
   font-size: 55px;
 }
 
-.slab-icon__large {
+.slab-icon--large {
   font-size: 80px;
 }
 
-.slab-menu-link {
+.slab-link {
   color: white;
 }
 
-.slab-menu-link:hover {
+.slab-link:hover {
   text-decoration: none;
   color: white;
 }
 
-.slab-menu-link:hover .slab-icon-wrapper {
+.slab-link:hover .slab-icon-wrapper {
   background: white;
-  box-shadow: 0 0 16px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.3);
 }
 
-.slab-menu-link:hover .slab-icon__medium:before {
+.slab-link:hover .slab-icon--primary:before {
   color: #0082F0;
+}
+
+.slab-link:hover .slab-menu__title {
+  text-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.slab-launcher__footer {
+  height: 50px;
 }
