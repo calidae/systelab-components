@@ -115,7 +115,7 @@ body {
   font-size: 2.4rem;
 }
 
-@media screen and ( min-height: 769px ) {
+@media screen and (min-height: 950px) {
   .slab-launcher__title {
     font-size: 3rem;
   }
@@ -126,7 +126,7 @@ body {
   line-height: 2rem;
 }
 
-@media screen and ( min-height: 769px ) {
+@media screen and (min-height: 950px) {
   .slab-launcher__description {
     font-size: 1.3rem;
     line-height: 2.6rem;
@@ -134,7 +134,7 @@ body {
   }
 }
 
-@media screen and ( min-height: 769px ) {
+@media screen and (min-height: 950px) {
   .slab-launcher__content {
     width: 75%;
   }
