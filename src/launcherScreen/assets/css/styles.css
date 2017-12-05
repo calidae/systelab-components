@@ -128,24 +128,24 @@ body {
   /* Icon modifiers
   ========================================================================== */
 
-  .slab-icon__squared {
+  .slab-icon--squared {
     width: 100px;
     height: 100px;
   }
 
-  .slab-icon__rounded {
+  .slab-icon--rounded {
     border-radius: 34px;
   }
 
-  .slab-icon__small {
+  .slab-icon--small {
     font-size: 22px;
   }
 
-  .slab-icon__medium {
+  .slab-icon--medium {
     font-size: 55px;
   }
 
-  .slab-icon__large {
+  .slab-icon--large {
     font-size: 80px;
   }
 
@@ -163,7 +163,7 @@ body {
   box-shadow: 0 0 16px 0 rgba(0,0,0,0.3);
 }
 
-.slab-link:hover .slab-icon__primary:before {
+.slab-link:hover .slab-icon--primary:before {
   color: #0082F0;
 }
 
