@@ -13,11 +13,6 @@
                            aria-controls="tables" aria-selected="false">Tables</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="combos-tab" data-toggle="tab" href="#combos" role="tab"
-                           aria-controls="combos"
-                           aria-selected="false">Combos</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" id="inputs-tab" data-toggle="tab" href="#inputs" role="tab"
                            aria-controls="inputs"
                            aria-selected="false">Inputs & text area</a>
@@ -60,7 +55,7 @@
                 </ul>
 
 
-                <div class="tab-content h-100 d-flex" id="showcase-tab-content">
+                <div class="tab-content d-flex" id="showcase-tab-content">
                     <div class="tab-pane p-4 active" id="grids"
                          role="tabpanel" aria-labelledby="grids-tab">
                         <form class="position-relative h-100 uk-flex-item-1 uk-flex uk-flex-column uk-flex-nowrap">
@@ -97,42 +92,6 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                    <div class="tab-pane p-4" id="combos" role="tabpanel"
-                         aria-labelledby="combos-tab">
-                        <div class="row align-items-center mt-1">
-                            <label class="col slab-label-215" for="form-h-s">Combo estático sin buscador</label>
-                            <systelab-select
-                                class="w-33"
-                                [values]="comboOptionList"
-                                (change)="comboChangeEvent($event)">
-                            </systelab-select>
-                        </div>
-                        <div class="row align-items-center mt-1">
-                            <label class="col slab-label-215" for="form-h-s">Combo estático sin buscador y con valor asignado</label>
-                            <systelab-select 
-                                class="w-33"
-                                [description]="'San Petersburgo'"
-                                [id]="1"
-                                [values]="comboOptionList"
-                                (change)="comboChangeEvent($event)">
-                            </systelab-select>
-                        </div>
-                        <div class="row align-items-center mt-1">
-                            <label class="col slab-label-215" for="form-h-s">Combo estático con buscador</label>
-                            <systelab-select
-                                class="w-33"
-                                [values]="comboOptionList" [filter]="true"
-                                (change)="comboChangeEvent($event)">
-                            </systelab-select>
-                        </div>
-                        <div class="row align-items-center mt-1">
-                            <label class="col slab-label-215" for="form-h-s">Color Picker</label>
-                            <systelab-colorpicker
-                                class="w-25"
-                                [(id)]="colorId">
-                            </systelab-colorpicker>
-                        </div>
                     </div>
                     <div class="tab-pane p-4" id="inputs" role="tabpanel"
                          aria-labelledby="inputs-tab">
@@ -180,12 +139,6 @@
                                         </div>
                                     </div>
                                     <div class="row align-items-center mt-1">
-                                        <label class="col slab-label-215" for="textarea">Textarea</label>
-                                        <div class="col">
-                                            <textarea name="" id="textarea" class="slab-textarea w-100"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mt-1">
                                         <label class="col slab-label-215" for="resize-textarea">Textarea resizable (only vertical)</label>
                                         <div class="col">
                                             <textarea name="" id="resize-textarea" class="slab-textarea w-100 slab-textarea-vertical-resize"></textarea>
@@ -197,6 +150,40 @@
                                             <textarea name="" id="noresize-textarea" class="slab-textarea w-100 slab-textarea-no-resize"></textarea>
                                         </div>
                                     </div>
+                                    <h4>Combos</h4>
+                                    <div class="row align-items-center mt-1">
+                                        <label class="col slab-label-215" for="form-h-s">Sin buscador</label>
+                                        <systelab-select
+                                            class="col-sm-4 w-33"
+                                            [values]="comboOptionList"
+                                            (change)="comboChangeEvent($event)">
+                                        </systelab-select>
+                                    </div>
+                                    <div class="row align-items-center mt-1">
+                                        <label class="col slab-label-215" for="form-h-s">Con valor asignado</label>
+                                        <systelab-select
+                                            class="col-sm-4 w-33"
+                                            [description]="'San Petersburgo'"
+                                            [id]="1"
+                                            [values]="comboOptionList"
+                                            (change)="comboChangeEvent($event)">
+                                        </systelab-select>
+                                    </div>
+                                    <div class="row align-items-center mt-1">
+                                        <label class="col slab-label-215" for="form-h-s">Con buscador</label>
+                                        <systelab-select
+                                            class="col-sm-4 w-33"
+                                            [values]="comboOptionList" [filter]="true"
+                                            (change)="comboChangeEvent($event)">
+                                        </systelab-select>
+                                    </div>
+                                    <div class="row align-items-center mt-1">
+                                        <label class="col slab-label-215" for="form-h-s">Color Picker</label>
+                                        <systelab-colorpicker
+                                            class="col-sm-4 w-25"
+                                            [(id)]="colorId">
+                                        </systelab-colorpicker>
+                                    </div>                                    
                                  </div>
                              </div>
                          </form>
