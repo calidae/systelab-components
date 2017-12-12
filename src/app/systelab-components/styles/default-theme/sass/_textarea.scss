@@ -5,6 +5,7 @@ $slab-textarea-min-height: ceil(170px * $size_percentage) !default;
 
 
 .slab-textarea {
+  display: block;
   border-radius: $border-radius;
   min-height: $slab-textarea-min-height;
   border: 1px solid $form-border;
