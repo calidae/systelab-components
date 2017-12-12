@@ -30,6 +30,7 @@ $tab-space: 5px;
 
     > .nav-link {
       height: 100%;
+      line-height: $tab-height;
       color: $background;
       text-shadow: none;
       background-color: $secondary-color;
