@@ -1,4 +1,4 @@
 .uk-switcher.from-tab {
-  margin-top: #{$tab-margin-top};
-  height: calc(100% - #{$tab-height} - #{$tab-margin-top}) !important;
+  margin-top: #{$tab-space};
+  height: calc(100% - #{$tab-height} - #{$tab-space}) !important;
 }
