@@ -1,21 +1,25 @@
 /**
  * 1. Override Bootstrap default behavior
  */
+%input {
+  height: $input-height;
+  border-color: $medium-gray;
+  border-radius: $border-radius;
+  font-family: $base-body-font-family;
+  padding: ($input-height - $base-font-size - 2px) / 2 6px;
+  
+  &:focus {
+    border-color: $form-focus-border; /* [1] */
+    background-color: $form-focus-background; /* [1] */
+    color: $darker-gray; /* [1] */
+    box-shadow: none; /* [1] */
+  }
+}
+
 .slab-input,
 input {
   &.form-control {
-    height: $input-height;
-    border-color: $medium-gray;
-    border-radius: $border-radius;
-    font-family: $base-body-font-family;
-    padding: ($input-height - $base-font-size - 2px) / 2 6px;
-  
-    &:focus {
-      border-color: $form-focus-border; /* [1] */
-      background-color: $form-focus-background; /* [1] */
-      color: $darker-gray; /* [1] */
-      box-shadow: none; /* [1] */
-    }
+    @extend %input;
   }
 
   &:disabled {
