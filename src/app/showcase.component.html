@@ -313,7 +313,7 @@
                     </div>
                     <div class="tab-pane p-4" id="checks" role="tabpanel"
                          aria-labelledby="checks-tab">
-                        <h4 class="uk-text-bold">Spinner</h4>
+                        <h3 class="uk-text-bold">Spinner</h3>
 
                         <div class="row align-items-center mt-1">
                             <label class="col slab-label-215">Spinner</label>
@@ -337,7 +337,7 @@
                         </div>
 
                         
-                        <h4 class="uk-text-bold">Checkbox</h4>
+                        <h3 class="uk-text-bold mt-5">Checkbox</h3>
 
                         <div class="row align-items-center mt-1">
                             <label class="col slab-label-215">Switcher</label>
@@ -351,7 +351,7 @@
                             </div>
                         </div>
 
-                        <div class="row align-items-top mt-1">
+                        <div class="row align-items-top mt-3">
                             <label class="col slab-label-215">Column</label>
                             <div class="col">
                                 <div>
@@ -365,7 +365,7 @@
                             </div>
                         </div>
 
-                        <div class="row align-items-center mt-1">
+                        <div class="row align-items-center mt-3">
                             <label class="col slab-label-215">Inline (using a grid)</label>
                             <div class="col-2">
                                 <input type="checkbox" id="check_urgent">
@@ -379,47 +379,48 @@
     
                         
                         
-                        <h4 class="uk-text-bold">Radio</h4>
-                        <div class="uk-form-row">
-                            <label class="uk-form-label" for="form-h-s">Column</label>
-                            <div class="uk-form-controls">
-                                <div class="uk-margin-bottom"><input name="status" type="radio" id="radio-urgent">
-                                    <label for="radio-urgent">Urgent</label></div>
-                                <div class="uk-margin-bottom"><input name="status" type="radio"
-                                                                     id="radio-not-urgent">
-                                    <label for="radio-not-urgent">Not Urgent</label></div>
-                            </div>
-                        </div>
+                        <h3 class="uk-text-bold mt-5">Radio</h3>
 
-                        <div class="uk-form-row">
-                            <label class="uk-form-label" for="form-h-s">Inline (using a grid)</label>
-                            <div class="uk-form-controls">
-                                <div class="uk-grid">
-                                    <div class="uk-width-1-5">
-                                        <input name="status" type="radio" id="radio-urgent2"> <label
-                                            for="radio-urgent2">Urgent</label>
-                                    </div>
-                                    <div class="uk-width-1-5">
-                                        <input name="status" type="radio" id="radio-not-urgent2"> <label
-                                            for="radio-not-urgent2">Not Urgent</label>
-                                    </div>
+                        <div class="row align-items-top mt-1">
+                            <label class="col slab-label-215">Column</label>
+                            <div class="col">
+                                <div>
+                                    <input name="status" type="radio" id="radio-urgent">
+                                    <label for="radio-urgent"> Urgent</label>
+                                </div>
+                                <div>
+                                    <input name="status" type="radio" id="radio-not-urgent">
+                                    <label for="radio-not-urgent"> Not Urgent</label>
                                 </div>
                             </div>
                         </div>
-                        <h4 class="uk-text-bold">Slider</h4>
-                        <div class="uk-form-row">
-                            <div class="uk-grid">
-                                <div class="uk-width-2-10">
+
+
+                        <div class="row align-items-center mt-3">
+                            <label class="col slab-label-215">Inline (using a grid)</label>
+                            <div class="col-2">
+                                    <input name="status" type="radio" id="radio-urgent2"> <label
+                                    for="radio-urgent2">Urgent</label>
+                            </div>
+                            <div class="col-2">
+                                    <input name="status" type="radio" id="radio-not-urgent2"> <label
+                                    for="radio-not-urgent2">Not Urgent</label>
+                            </div>
+                        </div>
+        
+                            
+                        <h3 class="uk-text-bold mt-5">Slider</h3>
+                        <div class="row align-items-center mt-1">
+                            <div class="col-2">
                                     <systelab-slider [(value)]="sliderValue" [min]="0" [max]="200" [step]="25"
-                                                     name="slider"></systelab-slider>
-                                </div>
-                                <div class="uk-width-2-10">
-                                    {{sliderValue}}
-                                </div>
+                                    name="slider"></systelab-slider>
+                            </div>
+                            <div class="col-1">
+                                    {{sliderValue}}      
                             </div>
                         </div>
-
                     </div>
+                    
                     <div class="tab-pane p-4" id="twolist" role="tabpanel"
                          aria-labelledby="twolist-tab">
                         <div class="uk-form-row uk-height-1-1">
