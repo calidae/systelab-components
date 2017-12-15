@@ -14,14 +14,16 @@ input[type="checkbox"]:not(.slab-checkbox-not-show) + label {
 
   @include user-selection(none);
 
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: $checkbox-text-gap;
   cursor: pointer;
-  display: inline-block;
-  height: $checkbox-height;
-  line-height: $checkbox-height;
+  // display: inline-block;
+  // height: $checkbox-height;
+  // line-height: $checkbox-height;
   font-size: 1rem;
-  padding-top: $top-icon;
+  // padding-top: $top-icon;
 
   &:empty {
     padding-left: $checkbox-height;
@@ -30,7 +32,7 @@ input[type="checkbox"]:not(.slab-checkbox-not-show) + label {
   &:before {
     @include size($checkbox-height);
 
-    @include position(absolute, $top: 0, $left: 0);
+    @include position(absolute, $top: 1px, $left: 0);
 
     @include backface-visibility(hidden);
 
