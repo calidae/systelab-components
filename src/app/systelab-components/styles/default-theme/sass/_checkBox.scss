@@ -19,11 +19,7 @@ input[type="checkbox"]:not(.slab-checkbox-not-show) + label {
   position: relative;
   padding-left: $checkbox-text-gap;
   cursor: pointer;
-  // display: inline-block;
-  // height: $checkbox-height;
-  // line-height: $checkbox-height;
   font-size: 1rem;
-  // padding-top: $top-icon;
 
   &:empty {
     padding-left: $checkbox-height;
@@ -38,18 +34,14 @@ input[type="checkbox"]:not(.slab-checkbox-not-show) + label {
 
     content: '';
     z-index: 0;
-    box-sizing: border-box;
-    display: inline-block;
 
     text-align: center;
-    background-color: $checkbox-color;
     border-radius: 4px;
     border: solid 1px $medium-gray;
     line-height: 1em;
     color: $checkbox-color;
 
     font-weight: bold;
-    font-style: normal;
     font-family: icomoon;
     font-size: $checkbox-height - 3px;
     -webkit-font-smoothing: antialiased;
