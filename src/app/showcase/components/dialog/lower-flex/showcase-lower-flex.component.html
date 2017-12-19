@@ -1,34 +1,22 @@
-<form class="d-flex align-items-end flex-column h-100 w-100 p-3">
-    <div class="ml-auto">
-        <div class="row align-items-center mt-1">
-            <div class="col">
-                <systelab-switch id="switch1" name="enabled"></systelab-switch>
-                <label for="switch1">Omit</label>
-            </div>
-        </div>
+<form class="d-flex flex-column h-100 w-100 p-3">
+    <div class="align-self-end">
+        <systelab-switch id="switch1" name="enabled"></systelab-switch>
+        <label for="switch1">Omit</label>
     </div>
     <div class="w-100">
         <div class="row align-items-center mt-1">
             <label class="col slab-label-215">
                 Date
             </label>
-            <div class="col-sm-3">
-                <div class="slab-form-icon">
-                    <systelab-datepicker
-                            [(currentDate)]="myDate"
-                            class="w-33"></systelab-datepicker>
+            <div class="col d-flex">
+                <div class="col px-0 mr-1">
+                    <systelab-datepicker [(currentDate)]="myDate"></systelab-datepicker>
                 </div>
-            </div>
-            <div class="col">
-                <systelab-spinner [spinValues]="touchSpinValues1" id="percentSample1">
+                <systelab-spinner class="mx-1" [spinValues]="touchSpinValues1" id="percentSample1">
                 </systelab-spinner>
-            </div>
-            <div class="col">
-                <systelab-spinner [spinValues]="touchSpinValues2" id="percentSample2">
+                <systelab-spinner class="mx-1" [spinValues]="touchSpinValues2" id="percentSample2">
                 </systelab-spinner>
-            </div>
-            <div class="col">
-                <systelab-spinner [spinValues]="touchSpinValues3" id="percentSample3">
+                <systelab-spinner class="ml-1" [spinValues]="touchSpinValues3" id="percentSample3">
                 </systelab-spinner>
             </div>
         </div>
