@@ -7,16 +7,6 @@
  * 2. Needed to prevent inherit color from UIkit
  */
 
-/* $tab-min-width: defines the min-width of the tabs.*/
-$tab-min-width: 120px !default;
-/* $height-diff: used to calculate the $tab-vertical-padding.*/
-$height-diff: 40px - $tab-height;
-/* $tab-vertical-padding: defines the padding of the elements inside the tab;
-                          defines the padding-bottom of the element when it’s hovered.*/
-$tab-vertical-padding: ceil(6px - $height-diff / 2);
-/* $tab-space: used to define the top margin and the gutter between elements */
-$tab-space: 5px;
-
 .nav {
   padding-left: 25px;
   white-space: nowrap;
@@ -25,8 +15,8 @@ $tab-space: 5px;
 
   > .nav-item {
     background-color: $background-hemohub;
-    padding-top: $tab-space;
-    margin-right: 2 * $tab-space;
+    padding-top: 2 * $tab-space;
+    margin-right: $tab-space;
 
     > .nav-link {
       height: 100%;
@@ -52,7 +42,7 @@ $tab-space: 5px;
         color: black;
         background-color: $background;
         border-top-color: $primary-color;
-        
+
         &:hover {
           border-color: $primary-color $form-border $background $form-border;
         }
