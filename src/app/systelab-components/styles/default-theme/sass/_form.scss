@@ -4,17 +4,9 @@
 
 .slab-label {
   line-height: $base-font-size;
-  width: 150px;
+  max-width: 190px;
   padding-right: 15px;
   margin-bottom: 0;
-}
-
-.slab-label-small {
-  max-width: 100px;
-}
-
-.slab-label-large {
-  max-width: 200px;
 }
 
 .slab-form-title {
