@@ -5,6 +5,16 @@
 .slab-label {
   line-height: $base-font-size;
   margin: 0;
+
+  @media (max-width: 575px) {
+    display: block;
+    min-width: 100%;
+    margin: 10px 0 5px 0;
+    
+    &:not(.col) {
+      padding-left: 15px;
+    }
+  }
 }
 
 .slab-label-115 {
